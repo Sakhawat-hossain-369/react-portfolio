@@ -3,7 +3,9 @@ import React from 'react'
 const Home = () => {
     return (
         <section id="home">
-            <div> Home</div>
+            <div> Home
+
+            </div>
         </section>
 
     )
