@@ -1,9 +1,11 @@
 import React from 'react'
+import '../../App.css'
 
 const Contact = () => {
     return (
         <section id="contact">
-            <div>Contact</div>
+            <div className="container">
+                Contact</div>
         </section>
 
     )

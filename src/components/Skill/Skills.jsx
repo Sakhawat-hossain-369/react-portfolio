@@ -1,9 +1,10 @@
 import React from 'react'
+import '../../App.css'
 
 const Skills = () => {
     return (
         <section id="skills">
-            <div> Skills</div>
+            <div className="container"> Skills</div>
 
         </section>
 
