@@ -1,14 +1,18 @@
 import React from 'react'
 import './Navbar.css'
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
         <nav className="navbar">
+            <div className="logo">
+                Sakhawat Hossain
+            </div>
             <button className="menu-btn"
                 onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? 'Close' : 'Menu'}
+                {isOpen ? <FaTimes /> : <FaBars />}
             </button>
 
             <div className={`menu ${isOpen ? "active" : ""}`}>

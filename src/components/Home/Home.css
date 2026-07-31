@@ -138,3 +138,42 @@
     color: #3B82F6;
     transform: translateY(-2px);
 }
+
+@media (max-width:750px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .name h1 {
+        font-size: 1.50rem;
+    }
+
+    .designation h3 {
+        font-size: 1rem;
+    }
+
+    .short-intro p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 95%;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+}

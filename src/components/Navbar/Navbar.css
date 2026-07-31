@@ -3,8 +3,15 @@
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, #0F172A, #1E3A8A);
+    padding: 12px 14px;
 
 
+}
+
+.logo {
+    color: #BFDBFE;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* Desktop */
@@ -37,12 +44,17 @@
 /* Mobile */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        flex-wrap: wrap;
     }
 
     .menu-btn {
         display: block;
+
+
     }
 
     .menu {
