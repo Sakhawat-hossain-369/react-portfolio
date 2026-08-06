@@ -2,22 +2,15 @@ import React from 'react'
 import '../../App.css'
 import './Skills.css'
 import Card from '../Card/Card'
-import react_logo from '../../assets/logos/react_logo.png'
-import js_logo from '../../assets/logos/js_logo.png'
-import HTML_logo from '../../assets/logos/HTML_logo.png'
-import CSS_logo from '../../assets/logos/CSS_logo.png'
-import bootstrap_logo from '../../assets/logos/bootstrap_logo.png'
-import redux_logo from '../../assets/logos/redux_logo.png'
-import python_logo from '../../assets/logos/python_logo.png'
-import django_logo from '../../assets/logos/django_logo.png'
-import rest_api_logo from '../../assets/logos/rest_api_logo.png'
-import mysql_logo from '../../assets/logos/mysql_logo.png'
-import github_logo from '../../assets/logos/github_logo.png'
-import jwt_logo from '../../assets/logos/jwt_logo.png'
+import Modal from '../Modal/Modal'
+import { useState } from 'react'
+import skillsData from '../../Data/SkillsData'
 
 
 
 const Skills = () => {
+    const [selectedSkill, setSelectedSkill] = useState(null);
+    console.log(selectedSkill)
     return (
         <section id="skills">
             <div className="container">
@@ -31,24 +24,19 @@ const Skills = () => {
                         <div className="frontend_section">
                             <h3>Frontend Skills</h3>
                             <div className="skills_list">
-                                <Card image={js_logo}
-                                    title="JavaScript"
-                                />
-                                <Card image={react_logo}
-                                    title="React"
-                                />
-                                <Card image={HTML_logo}
-                                    title="HTML"
-                                />
-                                <Card image={CSS_logo}
-                                    title="CSS"
-                                />
-                                <Card image={bootstrap_logo}
-                                    title="Bootstrap"
-                                />
-                                <Card image={redux_logo}
-                                    title="Redux"
-                                />
+                                {skillsData.filter(skill => skill.category === 'frontend')
+                                    .map(skill => (
+                                        <Card
+                                            key={skill.id}
+                                            image={skill.image}
+                                            title={skill.title}
+                                            onClick={() => {
+                                                console.log("Clicked")
+                                                setSelectedSkill(skill)
+                                            }}
+                                        />
+                                    ))
+                                }
 
 
 
@@ -58,30 +46,34 @@ const Skills = () => {
                         <div className="backend_section">
                             <h3> Backend Skills</h3>
                             <div className="skills_list">
-                                <Card image={python_logo}
-                                    title="Python"
-                                />
-                                <Card image={django_logo}
-                                    title="Django"
-                                />
-                                <Card image={rest_api_logo}
-                                    title="REST API"
-                                />
-                                <Card image={mysql_logo}
-                                    title="MySQL"
-                                />
-                                <Card image={jwt_logo}
-                                    title="JWT"
-                                />
-                                <Card image={github_logo}
-                                    title="GitHub"
-                                />
+                                {skillsData.filter(skill => skill.category === 'backend')
+                                    .map(skill => (
+                                        <Card
+                                            key={skill.id}
+                                            image={skill.image}
+                                            title={skill.title}
+                                            onClick={() => {
+                                                console.log("Clicked")
+                                                setSelectedSkill(skill)
+                                            }}
+
+                                        />
+                                    ))
+                                }
 
                             </div>
 
                         </div>
                     </div>
                 </div>
+                <Modal
+                    isOpen={selectedSkill !== null}
+                    setIsOpen={() => setSelectedSkill(null)}
+                    image={selectedSkill?.image}
+                    title={selectedSkill?.title}
+                    level={selectedSkill?.level}
+                    description={selectedSkill?.description}
+                />
             </div>
 
         </section>
