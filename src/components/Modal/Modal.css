@@ -2,34 +2,200 @@
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 80px;
+}
+
+
+.modal-content {
+    background:
+        radial-gradient(circle at top left, #DBEAFE 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #EFF6FF 0%, transparent 35%),
+        #F8FBFF;
+
+    width: 500px;
+    max-width: 90%;
+
+    padding: 20px;
+    padding-top: 40px;
+
+    border-radius: 10px;
+    position: relative;
+
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+
+    box-sizing: border-box;
+}
+
+
+/* Image */
+
+.modal-image {
+    width: 100%;
+    height: 220px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    z-index: 1000;
+    overflow: visible;
 }
 
-.modal-content {
-    background: white;
-    width: 500px;
-    max-width: 90%;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
+.modal-image img {
+    width: 240px;
+    height: 200px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease-in-out;
 }
 
-.modal-content img {
+.modal-image img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Modal Details */
+
+.modal-details {
     width: 100%;
-    height: auto;
 }
+
+.modal-title {
+    text-align: center;
+    padding: 15px;
+}
+
+.modal-title h2 {
+    margin: 10px 0;
+}
+
+.modal-level p,
+.modal-description p {
+    line-height: 1.6;
+}
+
+.modal-description strong,
+.modal-level strong {
+    margin-right: 5px;
+}
+
+
+/* Close Button */
 
 .close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
+
     border: none;
     background: transparent;
+
     font-size: 30px;
     cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        color 0.15s ease;
+}
+
+.close-btn:hover {
+    color: #3B82F6;
+    transform: scale(1.2);
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .modal {
+        padding-top: 50px;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 500px;
+
+        padding: 20px;
+        padding-top: 40px;
+
+        max-height: calc(100vh - 70px);
+    }
+
+    .modal-image {
+        height: 190px;
+    }
+
+    .modal-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .modal-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-level p,
+    .modal-description p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .close-btn {
+        top: 8px;
+        right: 12px;
+        font-size: 28px;
+    }
+}
+
+
+/* Small Mobile*/
+
+@media (max-width: 480px) {
+
+    .modal {
+        padding-top: 30px;
+    }
+
+    .modal-content {
+        width: 92%;
+
+        padding: 15px;
+        padding-top: 40px;
+
+        border-radius: 12px;
+
+        max-height: calc(100vh - 50px);
+    }
+
+    .modal-image {
+        height: 160px;
+    }
+
+    .modal-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .modal-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-level p,
+    .modal-description p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .close-btn {
+        top: 7px;
+        right: 10px;
+        font-size: 26px;
+    }
 }

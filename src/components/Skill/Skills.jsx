@@ -10,7 +10,7 @@ import skillsData from '../../Data/SkillsData'
 
 const Skills = () => {
     const [selectedSkill, setSelectedSkill] = useState(null);
-    console.log(selectedSkill)
+    // console.log(selectedSkill)
     return (
         <section id="skills">
             <div className="container">
@@ -31,7 +31,7 @@ const Skills = () => {
                                             image={skill.image}
                                             title={skill.title}
                                             onClick={() => {
-                                                console.log("Clicked")
+                                                // console.log("Clicked")
                                                 setSelectedSkill(skill)
                                             }}
                                         />
@@ -53,7 +53,7 @@ const Skills = () => {
                                             image={skill.image}
                                             title={skill.title}
                                             onClick={() => {
-                                                console.log("Clicked")
+                                                // console.log("Clicked")
                                                 setSelectedSkill(skill)
                                             }}
 
