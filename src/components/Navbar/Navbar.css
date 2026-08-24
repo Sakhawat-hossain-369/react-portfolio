@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -60,6 +64,7 @@
     .menu {
         display: none;
         width: 100%;
+        background: rgba(30, 58, 138, 0.95);
     }
 
     .menu.active {
@@ -69,5 +74,7 @@
     .menu ul {
         flex-direction: column;
         gap: 15px;
+        align-items: center;
+        padding-top: 15px;
     }
 }

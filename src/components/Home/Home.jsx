@@ -2,6 +2,7 @@ import React from 'react'
 import '../../App.css'
 import './Home.css'
 import Profile_pic from '../../assets/images/profile_pic.jpg'
+import pic from '../../assets/images/pic.jpg'
 import { MdEmail } from 'react-icons/md'
 import { FaPhoneAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { FaG } from 'react-icons/fa6'
@@ -15,7 +16,7 @@ const Home = () => {
                     <div className="left-side">
                         <div className="img-container">
                             {/* Profile picture */}
-                            <img src={Profile_pic} alt="Profile" />
+                            <img src={pic} alt="Profile" />
 
                         </div>
                     </div>

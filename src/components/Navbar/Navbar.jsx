@@ -11,17 +11,19 @@ const Navbar = () => {
                 Sakhawat Hossain
             </div>
             <button className="menu-btn"
-                onClick={() => setIsOpen(!isOpen)}>
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close menu" : "Open menu"}
+            >
                 {isOpen ? <FaTimes /> : <FaBars />}
             </button>
 
             <div className={`menu ${isOpen ? "active" : ""}`}>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about_me">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+                    <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
+                    <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+                    <li><a href="#about_me" onClick={() => setIsOpen(false)}>About Me</a></li>
+                    <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
                 </ul>
             </div>
 

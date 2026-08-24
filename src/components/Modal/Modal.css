@@ -152,6 +152,11 @@
         right: 12px;
         font-size: 28px;
     }
+
+    .close-btn:hover {
+        color: #3B82F6;
+        transform: scale(1.2);
+    }
 }
 
 
@@ -197,5 +202,10 @@
         top: 7px;
         right: 10px;
         font-size: 26px;
+    }
+
+    .close-btn:hover {
+        color: #3B82F6;
+        transform: scale(1.2);
     }
 }
