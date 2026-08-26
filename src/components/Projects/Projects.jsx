@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../App.css'
 import './Projects.css'
-import Card from '../Card/Card'
+import ProjectCard from '../Card/ProjectCard'
+import ProjectsData from '../../Data/ProjectsData'
+
 
 const Projects = () => {
     return (
@@ -14,7 +16,8 @@ const Projects = () => {
                     </div>
                     <div className="projects_content">
                         <div className="projects_cards">
-                            <h2>Cards</h2>
+
+                            <ProjectCard />
                         </div>
                     </div>
 
