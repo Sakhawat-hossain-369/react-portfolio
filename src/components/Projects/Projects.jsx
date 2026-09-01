@@ -6,6 +6,7 @@ import ProjectsData from '../../Data/ProjectsData'
 
 
 const Projects = () => {
+    const [selectedProject, setSelactedProject] = useState(null)
     return (
         <section id="projects">
             <div className="container">
@@ -17,7 +18,16 @@ const Projects = () => {
                     <div className="projects_content">
                         <div className="projects_cards">
 
-                            <ProjectCard />
+                            {ProjectsData.map(project => (
+                                <ProjectCard
+                                    key={project.id}
+                                    image={project.image}
+                                    title={project.title}
+                                    technologies={project.technology}
+                                />
+                            ))}
+
+                            {/* <ProjectCard /> */}
                         </div>
                     </div>
 

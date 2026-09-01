@@ -1,4 +1,5 @@
 import React from 'react'
+import './ProjectCard.css'
 
 const ProjectCard = ({ image, title, technologies, onClick }) => {
     return (
