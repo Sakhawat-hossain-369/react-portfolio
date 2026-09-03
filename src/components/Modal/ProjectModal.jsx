@@ -10,13 +10,20 @@ export const ProjectModal = ({
     technology,
     description }) => {
 
+    if (!isOpen) return null;
 
     return (
         <div className="project-modal">
             <div className="modal-content">
                 <button className="close-btn" onClick={() => setisOpen(false)}>&times;</button>
                 <div className="modal-image">
-                    <img src={image} alt={title} />
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`${title} ${index + 1}`} />
+                    ))}
+
                 </div>
                 <div className="modal-title">
                     <h2>{title}</h2>

@@ -73,6 +73,26 @@ const ProjectsData = [
         github: "",
         description: "This is Restaurant App Project"
 
+    },
+    {
+        id: 5,
+        image: rest1,
+        images: [rest1, rest2, rest3, rest4, rest5, rest6],
+        title: "Restaurant App",
+        technology: ["React", "Redux", "JavaScripts", "CSS"],
+        github: "",
+        description: "This is Restaurant App Project"
+
+    },
+    {
+        id: 6,
+        image: rest1,
+        images: [rest1, rest2, rest3, rest4, rest5, rest6],
+        title: "Restaurant App",
+        technology: ["React", "Redux", "JavaScripts", "CSS"],
+        github: "",
+        description: "This is Restaurant App Project"
+
     }
 ]
 
