@@ -28,8 +28,10 @@ export const ProjectModal = ({
     }
 
     return (
-        <div className="project-modal">
-            <div className="project-modal-content">
+        <div className="project-modal"
+            onClick={() => setisOpen(false)}>
+            <div className="project-modal-content"
+                onClick={(e) => e.stopPropagation()}>
                 <button className="close-btn" onClick={() => setisOpen(false)}>&times;</button>
                 <div className="project-modal-image">
                     <button

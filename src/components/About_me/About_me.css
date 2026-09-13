@@ -1,0 +1,17 @@
+#about_me {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+
+    background:
+        radial-gradient(circle at top left, #93C5FD 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #60A5FA 0%, transparent 35%),
+        #F8FBFF;
+}
+
+.about_me_content {
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+    padding-bottom: 25px;
+}
