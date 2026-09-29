@@ -11,8 +11,8 @@
         radial-gradient(circle at top left, #93C5FD 0%, transparent 40%),
         radial-gradient(circle at bottom right, #60A5FA 0%, transparent 35%),
         #F3F8FF;
-    border-radius: 0 0 50% 50% / 0 0 10% 10%;
-    border: 4px solid #3B82F6;
+    /* border-radius: 0 0 50% 50% / 0 0 10% 10%; */
+    /* border: 4px solid #3B82F6; */
 }
 
 .home-content {
