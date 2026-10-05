@@ -17,6 +17,7 @@ import burger5 from '../assets/burger-builder/burger-5.png'
 import burger6 from '../assets/burger-builder/burger-6.png'
 import burger7 from '../assets/burger-builder/burger-7.png'
 import burger8 from '../assets/burger-builder/burger-8.png'
+import burger9 from '../assets/burger-builder/burger-9.png'
 
 import blog1 from '../assets/blog-project/blog-1.png'
 import blog2 from '../assets/blog-project/blog-2.png'
@@ -47,8 +48,8 @@ const ProjectsData = [
     },
     {
         id: 2,
-        image: burger3,
-        images: [burger1, burger2, burger3, burger4, burger5, burger6, burger7, burger8],
+        image: burger1,
+        images: [burger1, burger2, burger3, burger4, burger5, burger6, burger7, burger8, burger9],
         title: "Burger Builder",
         technology: ["React", "Redux", "JavaScripts", "CSS"],
         github: "",

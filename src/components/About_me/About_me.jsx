@@ -17,21 +17,51 @@ const About_me = () => {
                         <div className="who_i_am">
                             <h3>Who I Am</h3>
                             <p>
-                                Hello! I'm Sakhawat Hossain Shakib...
+                                I am a dedicated and passionate individual with a strong interest in web development and e-commerce. My journey began with a solid educational foundation in Computer Management Technology, followed by a BSc in Computer Science & Engineering. Currently, I work as an Amazon PPC Specialist while continuously developing my skills in web development through hands-on projects and learning.
                             </p>
                         </div>
 
                         <div className="my_journey">
                             <h3>My Journey</h3>
-                            <p>Education</p>
-                            <p>Experience</p>
-                            <p>Learning</p>
+
+                            <div className="journey_item">
+                                <h4>🎓 Education</h4>
+                                <p>
+                                    Completed my Diploma in Engineering in Computer Management
+                                    Technology and later earned my BSc in Computer Science &
+                                    Engineering.
+                                </p>
+                            </div>
+
+                            <div className="journey_item">
+                                <h4>💼 Professional Experience</h4>
+                                <p>
+                                    Started my professional journey with computer hardware and
+                                    technical support, and currently work in Amazon PPC and
+                                    e-commerce operations.
+                                </p>
+                            </div>
+
+                            <div className="journey_item">
+                                <h4>💻 Full-Stack Development</h4>
+                                <p>
+                                    Alongside my professional work, I have been developing my skills in React, Python, Django, Django REST Framework, and MySQL. Through the BOHUBRIHI learning platform, I have been following a structured full-stack development roadmap and strengthening my knowledge through hands-on learning and personal projects.
+                                </p>
+                            </div>
+
+                            <div className="journey_item">
+                                <h4>🚀 Where I'm Heading</h4>
+                                <p>
+                                    My goal is to transition into a full-time software development
+                                    career as a Junior Full-Stack Developer.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <div className="my_goal">
-                        <h3>My Goal</h3>
-                        <p>Junior Full Stack Developer</p>
+                        <h4>My Goal</h4>
+                        <p>To become a skilled full-stack developer and build meaningful, real-world solutions.</p>
                     </div>
 
 
