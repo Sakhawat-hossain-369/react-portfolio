@@ -1,0 +1,10 @@
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+
+    background:
+        radial-gradient(circle at top right, #BFDBFE 0%, transparent 40%),
+        radial-gradient(circle at bottom left, #DBEAFE 0%, transparent 35%),
+        #EFF6FF;
+}
